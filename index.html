@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NOCTELLE — Portfolio</title>
+  <meta name="description" content="NOCTELLE — portofolio sinematik Mira Solenne, desainer Game / UX.">
+  <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="cursor cursor-default" id="cursor" aria-hidden="true"></div>
+
+  <!-- ═══ Loader ═══ -->
+  <div class="loader" id="loader">
+    <p class="loader__percent" id="loaderPercent">0%</p>
+    <div class="loader__bar"><span id="loaderProgress"></span></div>
+    <p class="loader__text" id="loaderText">Loading</p>
+    <button class="loader__enter-btn" id="loaderEnterBtn" type="button">
+      <span>Masuki Dunia</span>
+      <span>Enter World</span>
+    </button>
+  </div>
+
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+  <video id="page23Video" preload="metadata" muted playsinline webkit-playsinline aria-hidden="true">
+    <source src="assets/video/page2-page3-mobile.mp4" media="(max-width: 720px)" type="video/mp4">
+    <source src="assets/video/page2-page3.mp4" type="video/mp4">
+  </video>
+  <canvas id="cursor-canvas" aria-hidden="true"></canvas>
+  <audio id="bgAudio" preload="auto" loop src="assets/audio/ambient.mp3"></audio>
+
+  <!-- ═══ Header ═══ -->
+  <header class="nav">
+    <a class="nav__brand" href="#" id="brandHome" aria-label="NOCTELLE — kembali ke awal">
+      <svg class="nav__logo" viewBox="0 0 160 40" aria-hidden="true">
+        <defs>
+          <radialGradient id="lgCore" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#fff3cf"/><stop offset=".55" stop-color="#e9bf6a"/><stop offset="1" stop-color="#8c6223"/>
+          </radialGradient>
+        </defs>
+        <g transform="translate(20 20)" fill="none" stroke="#e8c983">
+          <circle r="13.5" stroke-width=".9" opacity=".75"/>
+          <ellipse rx="17.5" ry="6" transform="rotate(-28)" stroke-width=".8" opacity=".85"/>
+          <circle r="7.2" fill="url(#lgCore)" stroke="none"/>
+          <circle r="3.4" fill="#1a1208" stroke="none"/>
+          <circle cx="14.6" cy="-8" r="1.7" fill="#ffe9b0" stroke="none"/>
+        </g>
+        <text x="46" y="25.5" fill="#efdcae" font-family="Cormorant Garamond, Georgia, serif" font-size="14.5" font-weight="500" letter-spacing="4.2">NOCTELLE</text>
+      </svg>
+    </a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#" id="introOpenBtn">INTRO</a></li>
+      <li class="nav__sep" aria-hidden="true"><img src="assets/svg/dot.svg" alt=""></li>
+      <li class="nav__dropdown" id="projectsDropdown">
+        <a href="#" id="projectsMenuBtn" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
+        <div class="nav__dropdown-menu" id="projectsDropdownMenu" aria-label="Sub-menu proyek">
+          <a href="#" data-node="1">UX PROJECTS</a>
+          <a href="#" data-node="4"><span>OTHERS</span><small class="nav__dropdown-note">(graphic)</small></a>
+        </div>
+      </li>
+      <li class="nav__sep" aria-hidden="true"><img src="assets/svg/dot.svg" alt=""></li>
+      <li><a href="#" id="soundToggle" class="is-active">MUTE</a></li>
+    </ul>
+  </header>
+
+  <main class="pages">
+    <!-- Page 1 — prelude -->
+    <section class="page is-render-active" id="page-1">
+      <div class="page__content page__content--left" id="page1Content">
+        <div class="page__folio" aria-label="portfolio">
+          <span class="page__folio-word">portfolio</span>
+          <svg class="page__folio-rule" viewBox="0 0 420 24" aria-hidden="true">
+            <path d="M40 12H182M238 12H380" stroke="#e9d3a0" stroke-width=".8" opacity=".75"/>
+            <path d="M210 2 L212.6 9.4 L220 12 L212.6 14.6 L210 22 L207.4 14.6 L200 12 L207.4 9.4Z" fill="#f1dfb4"/>
+            <circle cx="190" cy="12" r="1.3" fill="#e9d3a0"/><circle cx="230" cy="12" r="1.3" fill="#e9d3a0"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 2 — UX portfolio board -->
+    <section class="page" id="page-2">
+      <div class="page__content" id="page2Content">
+        <div class="portfolio-embed">
+          <div class="pt-page" data-pt-demo>
+            <section class="pt-scroll-scene" aria-labelledby="pt-timeline-title">
+              <div class="pt-sticky pt-dual-board">
+                <div class="pt-frame" aria-hidden="true"></div>
+                <header class="pt-scene-header">
+                  <h2 id="pt-timeline-title">UX Portfolio｜Karya UX</h2>
+                </header>
+
+                <section class="pt-zone-featured" aria-labelledby="pt-featured-title">
+                  <header class="pt-zone-head">
+                    <h3 id="pt-featured-title" class="pt-zone-label">
+                      <span class="pt-zone-label-icon" aria-hidden="true"><svg class="pt-zone-label-icon-svg" viewBox="0 0 20 20"><path d="M10 3 17 10 10 17 3 10Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span>
+                      <span class="pt-zone-label-text">
+                        <span class="pt-zone-label-cn">Proyek Inti</span>
+                        <span class="pt-zone-label-sep" aria-hidden="true">｜</span>
+                        <span class="pt-zone-label-en">Featured Case Studies</span>
+                      </span>
+                    </h3>
+                  </header>
+                  <div class="pt-featured-row" id="ptFeaturedRow"></div>
+                  <div class="pt-zone-divider" aria-hidden="true"></div>
+                </section>
+
+                <section class="pt-zone-selected" aria-labelledby="pt-selected-title">
+                  <header class="pt-zone-head">
+                    <h3 id="pt-selected-title" class="pt-zone-label pt-zone-label--selected">
+                      <span class="pt-zone-label-icon" aria-hidden="true"><svg class="pt-zone-label-icon-svg" viewBox="0 0 20 20"><path d="M17 10H4M8 6 4 10 8 14" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span>
+                      <span class="pt-zone-label-text">
+                        <span class="pt-zone-label-cn">Karya Pilihan Lain</span>
+                        <span class="pt-zone-label-sep" aria-hidden="true">｜</span>
+                        <span class="pt-zone-label-en">Selected Works</span>
+                      </span>
+                    </h3>
+                  </header>
+                  <div class="pt-viewport pt-viewport--selected">
+                    <div class="pt-track pt-track--selected" data-pt-track id="ptSelectedTrack"></div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Page 3 — white video page -->
+    <section class="page" id="page-3">
+      <div class="page__content" id="page3Content" aria-hidden="true"></div>
+    </section>
+
+    <!-- Page 4 — orb scene -->
+    <section class="page page--static" id="page-4">
+      <div class="page4-scene" aria-hidden="true">
+        <img class="page4-layer page4-layer--back" src="assets/img/scene/p4-back.webp" alt="" decoding="async">
+        <img class="page4-layer page4-layer--front" src="assets/img/scene/p4-front.webp" alt="" decoding="async">
+        <canvas class="page4-preview-layer" id="page4PreviewLayer"></canvas>
+        <div class="ripple-layer">
+          <svg class="ripple-filter-defs" aria-hidden="true">
+            <filter id="orb-shimmer" x="-10%" y="-10%" width="120%" height="120%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="2" seed="7" result="n">
+                <animate attributeName="baseFrequency" dur="14s" values="0.012 0.03;0.016 0.024;0.012 0.03" repeatCount="indefinite"/>
+              </feTurbulence>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="14" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+          </svg>
+          <img class="ripple-source" src="assets/img/scene/p4-front.webp" alt="" decoding="async">
+        </div>
+        <div class="page4-ball-layer" aria-hidden="true">
+          <div class="page4-ball-ring">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="ringPath" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs>
+              <text><textPath href="#ringPath" startOffset="0">· touch the orb · light becomes dark · dark becomes light · noctelle ·</textPath></text>
+            </svg>
+          </div>
+        </div>
+        <div class="orb-hotspot"></div>
+      </div>
+      <div class="page__content" id="page4Content" aria-hidden="true"></div>
+    </section>
+
+    <!-- Page 5 — the eyes -->
+    <section class="page page--static" id="page-5">
+      <div class="page5-scene" aria-hidden="true">
+        <div class="page5-frame-layer">
+          <img class="page5-layer" id="page5FrameImage" src="assets/img/scene/p5-eyes-graded.webp" alt="" decoding="async">
+          <div class="page5-dapple" aria-hidden="true"></div>
+        </div>
+        <div class="page5-right-eye-window" id="page5RightEyeWindow">
+          <div class="page5-right-eye-anchor">
+            <div class="page5-eye-bottom-shadow"></div>
+            <img class="page5-right-eye-ball" src="assets/img/scene/eye-L.png" alt="">
+            <div class="page5-eye-shadow"></div>
+          </div>
+        </div>
+        <div class="page5-second-eye-window" id="page5SecondEyeWindow" role="button" tabindex="0" aria-label="Buka Other Projects" data-cursor-hover>
+          <div class="page5-right-eye-anchor">
+            <div class="page5-eye-bottom-shadow"></div>
+            <div class="page5-right-eye-ball page5-eye-gold">
+              <img src="assets/img/scene/eye-R.png" alt="">
+              <span class="page5-eye-label">Other<br>Projects</span>
+            </div>
+            <div class="page5-eye-shadow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page__content" id="page5Content" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <p class="scroll-hint" id="scrollHint">Scroll to explore</p>
+  <div class="page-turn-stage" id="pageTurnStage" aria-hidden="true">
+    <img class="page-turn-stage__image" id="pageTurnStageImage" src="assets/img/scene/p5-eyes-graded.webp" alt="">
+  </div>
+  <div class="page-turn-curl" id="pageTurnCurl" aria-hidden="true"></div>
+
+      <!-- Project detail modal -->
+  <div class="pt-modal" data-pt-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pt-modal-title">
+    <div class="pt-modal-backdrop" data-pt-close></div>
+    <section class="pt-modal-panel">
+      <div class="pt-modal-shell">
+        <header class="pt-modal-topbar">
+          <div class="pt-modal-topbar-visual">
+            <nav class="pt-section-tabs" data-pt-section-tabs hidden aria-label="Bagian proyek"></nav>
+          </div>
+          <div class="pt-modal-topbar-main">
+            <p class="pt-modal-year" data-pt-modal-year></p>
+            <button class="pt-close" type="button" data-pt-close aria-label="Tutup detail proyek">×</button>
+          </div>
+        </header>
+        <div class="pt-modal-grid">
+          <div class="pt-modal-visual-wrap">
+            <div class="pt-modal-visual-stage">
+              <div class="pt-modal-visual" data-pt-modal-visual aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="pt-modal-content">
+            <h2 id="pt-modal-title" data-pt-modal-title></h2>
+            <p class="pt-modal-subtitle" data-pt-modal-subtitle></p>
+            <div class="pt-intro-scroll">
+              <div class="pt-modal-intro" data-pt-modal-intro></div>
+            </div>
+            <div class="pt-page-dots" data-pt-page-dots hidden aria-label="Halaman proyek"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-visual-nav-rail" aria-hidden="true">
+        <button class="pt-visual-nav pt-visual-nav--prev" type="button" data-pt-visual-prev aria-label="Halaman sebelumnya" hidden>‹</button>
+        <button class="pt-visual-nav pt-visual-nav--next" type="button" data-pt-visual-next aria-label="Halaman berikutnya" hidden>›</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Other projects modal -->
+  <div class="pt-modal other-projects-modal" id="otherProjectsModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="other-projects-title">
+    <div class="pt-modal-backdrop" data-other-projects-close></div>
+    <section class="pt-modal-panel">
+      <div class="pt-modal-shell">
+        <header class="pt-modal-topbar">
+          <div class="pt-modal-topbar-visual"></div>
+          <div class="pt-modal-topbar-main">
+            <p class="pt-modal-year" id="other-projects-title">Other Projects</p>
+            <button class="pt-close" type="button" data-other-projects-close aria-label="Tutup Other Projects">×</button>
+          </div>
+        </header>
+        <div class="pt-modal-grid">
+          <div class="other-projects-gallery" id="otherProjectsGallery" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ Intro / profile modal ═══ -->
+  <div id="introModal" class="intro-modal" hidden aria-hidden="true">
+    <div class="intro-modal__shader" aria-hidden="true"></div>
+    <div class="intro-modal__stage">
+      <section class="intro-modal__panel" role="dialog" aria-modal="true" aria-label="Profil">
+        <div class="intro-modal__shell">
+          <header class="intro-modal__topbar">
+            <p class="intro-modal__eyebrow">Profile</p>
+            <div class="intro-modal__topbar-actions">
+              <button type="button" class="intro-modal__lang-btn" id="introLangBtn" aria-label="Ganti ke versi Inggris">English Version</button>
+              <button type="button" class="pt-close intro-modal__close" id="introCloseBtn" aria-label="Tutup profil">×</button>
+            </div>
+          </header>
+
+          <div class="intro-modal__scroll">
+            <!-- Bahasa Indonesia -->
+            <div class="intro-modal__body" data-intro-lang="id">
+              <aside class="intro-modal__sidebar">
+                <div class="intro-modal__hero">
+                  <h2>Mira Solenne <span>Noctelle Studio</span></h2>
+                  <p class="intro-modal__role">Game / UX Designer</p>
+                  <p class="intro-modal__subtitle">Desainer Interaksi Gim / Desainer UX / Kreator Independen</p>
+                  <p class="intro-modal__summary">Enam tahun pengalaman di desain interaksi gim dan UX: sistem gim, alat komunitas, lokalisasi global, produk 0-1, dan proyek AI. Terbiasa merapikan alur, merancang solusi interaksi, menyusun pedoman desain, dan bekerja lintas tim.</p>
+                </div>
+                <section class="intro-modal__section intro-modal__section--boxed">
+                  <h3 class="intro-modal__section-title">Keahlian Inti <span>Core Skills</span></h3>
+                  <ul class="intro-modal__skills">
+                    <li>Desain interaksi & sistem gim</li>
+                    <li>Pengalaman & antarmuka pengguna</li>
+                    <li>Desain produk komunitas / alat</li>
+                    <li>Lokalisasi & desain global</li>
+                    <li>Peluncuran produk 0-1</li>
+                    <li>Pedoman desain & riset pengguna</li>
+                    <li>Kolaborasi produk AI & konten</li>
+                  </ul>
+                </section>
+                <section class="intro-modal__section intro-modal__section--boxed">
+                  <h3 class="intro-modal__section-title">Pendidikan <span>Education</span></h3>
+                  <div class="intro-modal__edu">
+                    <article class="intro-modal__edu-item">
+                      <div class="intro-modal__edu-head"><strong>Halden School of Interaction Design</strong><em>2018.09 – 2019.10</em></div>
+                      <p>Magister Desain Interaksi</p>
+                      <p>Instalasi pameran: «Tidal Memory» dan «Kantor Pos Kenangan»</p>
+                    </article>
+                    <article class="intro-modal__edu-item">
+                      <div class="intro-modal__edu-head"><strong>Meridian University</strong><em>2014.09 – 2017.12</em></div>
+                      <p>Desain Multimedia</p>
+                      <p>Kurator Pameran Cahaya 2017<br>Aplikasi layanan kesehatan relawan 2016</p>
+                    </article>
+                  </div>
+                </section>
+                <section class="intro-modal__section">
+                  <h3 class="intro-modal__section-title">Arah Proyek Pilihan <span>Selected Project Areas</span></h3>
+                  <div class="intro-modal__focus">
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Sistem & interaksi gim</strong></div><p>Alur sistem, antarmuka, umpan balik tugas, acara, dan alat untuk gim strategi, RPG, dan komunitas pemain.</p></article>
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Komunitas & platform alat</strong></div><p>Alat komunitas, lingkar minat, alat produksi video, dan produk distribusi 0-1.</p></article>
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Lokalisasi & pengalaman global</strong></div><p>Adaptasi interaksi multibahasa dan multiwilayah beserta pedoman desainnya.</p></article>
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Produk AI & eksplorasi kreatif</strong></div><p>Desain produk kamera AI, interaksi alat AI, pembuatan gim, dan konten portofolio berbantuan AI.</p></article>
+                  </div>
+                </section>
+              </aside>
+              <section class="intro-modal__main">
+                <section class="intro-modal__section">
+                  <h3 class="intro-modal__section-title">Pengalaman Kerja <span>Work Experience</span></h3>
+                  <div class="intro-modal__experience">
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Desainer Interaksi Lepas / Kreator Independen<br>Freelance</strong><em>2024.11 – Kini</em></div>
+                      <div class="intro-modal__subentries">
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Pengembangan gim indie</strong><em>2026.03 – Kini</em></div>
+                          <ul><li>Mengembangkan gim naratif pribadi: konsep, interaksi, eksplorasi gaya seni, dan prototipe.</li><li>Membantu rekan membangun platform AI + gim, termasuk arah produk dan rancangan fitur.</li></ul>
+                        </section>
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Perencana Jalur Gim, Hackathon 1.000 Peserta</strong><em>2026.06 – 2026.08</em></div>
+                          <ul><li>Merancang posisi jalur, mekanisme peserta, arah proyek, dan sumber daya mitra.</li><li>Menyusun tantangan, alur acara, koordinasi mentor, dan dukungan pelaksanaan.</li></ul>
+                        </section>
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Wirausaha</strong><em>2025.02 – 2026.04</em></div>
+                          <p>Mendirikan kedai teh kecil «Lantern Tea House». Terlibat dalam posisi merek, desain menu, materi visual, pengalaman pelanggan, dan operasional harian.</p>
+                        </section>
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Kolaborasi berbasis proyek</strong><em>2024.11 – 2025.02</em></div>
+                          <ul><li>Studio mitra: pengelolaan spesifikasi layar dan kebutuhan desain rutin.</li><li>Proyek kamera AI: manajer produk untuk arah, perencanaan fitur, dan interaksi.</li><li>Media interaktif + AI: kreator konten yang mengeksplorasi alat AI untuk desain.</li></ul>
+                        </section>
+                      </div>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Ravenmoor Games – Desainer Interaksi Senior<br>RAVENMOOR</strong><em>2024.02 – 2024.08</em></div>
+                      <ul><li>Perencanaan interaksi dan pengalaman untuk gim aksi naratif «Iron Requiem».</li><li>Menyusun alur fitur sistem, menyampaikan solusi interaksi, dan mendorong iterasi.</li></ul>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Kitezh Interactive – Pemimpin UX Global / Desainer Interaksi Senior<br>KITEZH</strong><em>2021.09 – 2023.11</em></div>
+                      <ul><li>Memimpin tim UX versi global «Crownfall Tactics» tanpa insiden UX besar selama masa kerja.</li><li>Menyusun pedoman interaksi multibahasa untuk enam wilayah bahasa.</li><li>Merancang mode turnamen lintas server dan mengoptimalkan tiga putaran iterasi.</li><li>Memimpin interaksi acara ulang tahun ketiga yang ditonton hampir satu juta penonton serentak.</li><li>Bertanggung jawab atas interaksi musim reguler, riset laporan laga, dan standar kontrol.</li></ul>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Northwind Studio – Desainer Interaksi Komunitas<br>NORTHWIND</strong><em>2020.07 – 2021.09</em></div>
+                      <ul><li>Desainer interaksi utama «Lumen Guild»; mentor dan pewawancara magang.</li><li>Merancang alat dan acara gim populer, termasuk ensiklopedia gim dan lingkar penggemar.</li><li>Merancang alat sosial yang meningkatkan DAU dan konversi secara signifikan.</li><li>Memimpin tinjauan alur 1.0–3.0 bersama berbagai departemen.</li><li>Terlibat dalam proyek 0-1: distribusi, gim awan, alat video, dan sistem check-in.</li></ul>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Paperkite Labs – Desainer Interaksi Gim<br>PAPERKITE</strong><em>2020.01 – 2020.06</em></div>
+                      <ul><li>Merancang interaksi sistem kota inti untuk SLG «Ashen Dominion».</li><li>Bertanggung jawab atas panel bangunan, bakat, barak, tugas, dan umpan balik.</li><li>Menyusun aturan pengambilan item, standar animasi, kotak surat, dan login harian.</li></ul>
+                    </article>
+                  </div>
+                </section>
+              </section>
+            </div>
+
+            <!-- English -->
+            <div class="intro-modal__body" data-intro-lang="en" hidden>
+              <aside class="intro-modal__sidebar">
+                <div class="intro-modal__hero">
+                  <h2>Mira Solenne</h2>
+                  <p class="intro-modal__role">Game / UX Designer</p>
+                  <p class="intro-modal__subtitle">Game Interaction Designer / UX Designer / Independent Creator</p>
+                  <p class="intro-modal__summary">Six years in game interaction and UX design, covering game systems, community tools, global localization, 0-1 products and AI projects. Comfortable untangling flows, designing interaction solutions, writing design guidelines and working across teams.</p>
+                </div>
+                <section class="intro-modal__section intro-modal__section--boxed">
+                  <h3 class="intro-modal__section-title">Core Skills <span>Core Skills</span></h3>
+                  <ul class="intro-modal__skills">
+                    <li>Game interaction & system design</li>
+                    <li>User experience & interface design</li>
+                    <li>Community & tool product design</li>
+                    <li>Localization & global design</li>
+                    <li>0-1 product launches</li>
+                    <li>Design guidelines & user research</li>
+                    <li>AI product collaboration & content</li>
+                  </ul>
+                </section>
+                <section class="intro-modal__section intro-modal__section--boxed">
+                  <h3 class="intro-modal__section-title">Education <span>Education</span></h3>
+                  <div class="intro-modal__edu">
+                    <article class="intro-modal__edu-item">
+                      <div class="intro-modal__edu-head"><strong>Halden School of Interaction Design</strong><em>2018.09 – 2019.10</em></div>
+                      <p>Master of Interaction Design</p>
+                      <p>Exhibited installations: Tidal Memory and The Memory Post Office</p>
+                    </article>
+                    <article class="intro-modal__edu-item">
+                      <div class="intro-modal__edu-head"><strong>Meridian University</strong><em>2014.09 – 2017.12</em></div>
+                      <p>Multimedia Design</p>
+                      <p>Curated the 2017 Festival of Light exhibition<br>2016 volunteer healthcare service app</p>
+                    </article>
+                  </div>
+                </section>
+                <section class="intro-modal__section">
+                  <h3 class="intro-modal__section-title">Selected Project Areas <span>Selected Project Areas</span></h3>
+                  <div class="intro-modal__focus">
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Game Systems & Interaction</strong></div><p>System flows, interfaces, task feedback, events and tools for strategy, RPG and player-community products.</p></article>
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Community & Tool Platforms</strong></div><p>Community tools, interest circles, video production tools and 0-1 distribution products.</p></article>
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>Localization & Global Experience</strong></div><p>Multi-language, multi-region interaction adaptation and the guidelines behind it.</p></article>
+                    <article class="intro-modal__focus-item"><div class="intro-modal__focus-head"><strong>AI Products & Creative Exploration</strong></div><p>AI camera product design, AI tool interaction, game creation and AI-assisted portfolio content.</p></article>
+                  </div>
+                </section>
+              </aside>
+              <section class="intro-modal__main">
+                <section class="intro-modal__section">
+                  <h3 class="intro-modal__section-title">Work Experience <span>Work Experience</span></h3>
+                  <div class="intro-modal__experience">
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Freelance Interaction Designer / Independent Creator<br>Freelance</strong><em>2024.11 – Now</em></div>
+                      <div class="intro-modal__subentries">
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Independent game development</strong><em>2026.03 – Now</em></div>
+                          <ul><li>Building a personal narrative game: concept, interaction, art-style exploration and prototyping.</li><li>Helping friends shape an AI + game platform, from product direction to feature design.</li></ul>
+                        </section>
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Game Track Planner, 1,000-Person Hackathon</strong><em>2026.06 – 2026.08</em></div>
+                          <ul><li>Planned track positioning, participant flow, project direction and partner resources.</li><li>Shaped challenges, event flow, mentor coordination and on-site support.</li></ul>
+                        </section>
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Entrepreneurship</strong><em>2025.02 – 2026.04</em></div>
+                          <p>Founded a small tea house, “Lantern Tea House”. Worked on brand positioning, menu design, visual assets, customer experience and daily operations.</p>
+                        </section>
+                        <section class="intro-modal__subentry">
+                          <div class="intro-modal__subentry-head"><strong>Project-based collaboration</strong><em>2024.11 – 2025.02</em></div>
+                          <ul><li>Partner studios: screen specifications and routine design requests.</li><li>AI camera project: product manager for direction, feature planning and interaction.</li><li>AI + interactive media: content creator exploring AI tools for design.</li></ul>
+                        </section>
+                      </div>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Ravenmoor Games – Senior Interaction Designer<br>Ravenmoor</strong><em>2024.02 – 2024.08</em></div>
+                      <ul><li>Interaction and experience planning for the narrative action game Iron Requiem.</li><li>Structured system feature flows, delivered interaction solutions and drove iteration.</li></ul>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Kitezh Interactive – Global UX Lead / Senior Interaction Designer<br>Kitezh</strong><em>2021.09 – 2023.11</em></div>
+                      <ul><li>Led the UX team for the global version of Crownfall Tactics with no major UX incidents.</li><li>Wrote multi-language interaction guidelines for six language regions.</li><li>Designed the cross-server tournament mode and optimised three rounds of iteration.</li><li>Led interaction for the third-anniversary event, watched by nearly one million concurrent viewers.</li><li>Owned regular-season interaction, match-report research and control standards.</li></ul>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Northwind Studio – Community Interaction Designer<br>Northwind</strong><em>2020.07 – 2021.09</em></div>
+                      <ul><li>Lead interaction designer for Lumen Guild; intern mentor and interviewer.</li><li>Designed tools and events for popular games, including a game wiki and fan circles.</li><li>Designed social tools that significantly lifted DAU and conversion.</li><li>Led flow reviews 1.0–3.0 with partner departments.</li><li>Worked on 0-1 projects: distribution, cloud gaming, video tools and check-in systems.</li></ul>
+                    </article>
+                    <article class="intro-modal__experience-item">
+                      <div class="intro-modal__experience-head"><strong>Paperkite Labs – Game Interaction Designer<br>Paperkite</strong><em>2020.01 – 2020.06</em></div>
+                      <ul><li>Designed the core city-building interactions for the SLG Ashen Dominion.</li><li>Owned building panels, talents, barracks, quests and feedback systems.</li><li>Defined item-collection rules, motion standards, mailbox and daily login.</li></ul>
+                    </article>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

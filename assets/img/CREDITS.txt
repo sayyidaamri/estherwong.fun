@@ -1,0 +1,78 @@
+scene/p4-scene.webp	https://unsplash.com/photos/a-hand-holding-a-globe-CPB7Wyt0pdw	a hand holding a globe
+scene/p5-eyes.webp	https://unsplash.com/photos/woman-portrait-with-dark-curly-hair--IFCM5HuuUg	A close-up portrait of a woman with dark curly hair and brown eyes
+scene/p2-board-bg.webp	https://unsplash.com/photos/person-wearing-brown-hooded-coat-uGBIhxZ4zoE	person wearing brown hooded coat
+thumb/t0.webp	https://unsplash.com/photos/antique-map-of-a-mountainous-landscape-with-a-river-b9xBaA4ZDbs	Antique map of a mountainous landscape with a river
+thumb/t1.webp	https://unsplash.com/photos/person-writing-on-white-paper-hLit2zL-Dhk	person writing on white paper
+thumb/t2.webp	https://unsplash.com/photos/burg-eltz-castle-in-wierschem-21DP3hytVHw	Burg Eltz castle in Wierschem, Germany, surrounded by thick morning fog
+thumb/t3.webp	https://unsplash.com/photos/solar-eclipse-VIcTzkzNZR8	solar eclipse
+thumb/t4.webp	https://unsplash.com/photos/yellow-pillar-candle-in-black-lantern-S7mAngnWV1A	yellow pillar candle in black lantern
+thumb/t5.webp	https://unsplash.com/photos/a-video-game-controller-sitting-on-top-of-a-table-PLuIeOaqpYg	a video game controller sitting on top of a table
+thumb/t6.webp	https://unsplash.com/photos/man-in-black-and-white-crew-neck-shirt-holding-black-nikon-dslr-camera-b5oaW2R5iks	man in black and white crew neck shirt holding black nikon dslr camera
+thumb/t7.webp	https://unsplash.com/photos/a-black-bird-sitting-on-top-of-a-roof-d-vBDK5rqR0	a black bird sitting on top of a roof
+thumb/t8.webp	https://unsplash.com/photos/white-and-black-skull-figurine-on-black-surface-u6OnpbMuZAs	white and black skull figurine on black surface
+work/p0a.webp	https://unsplash.com/photos/an-old-map-of-scotland-with-regions-labeled-ortxaQtiwI0	An old map of scotland with regions labeled
+work/p0b.webp	https://unsplash.com/photos/vintage-map-of-ireland-and-wales-dXZLyu28SxY	Vintage map of ireland and wales
+work/p0c.webp	https://unsplash.com/photos/an-antique-colorful-map-of-china-with-decorative-borders-7n7FqvDnVmM	An antique, colorful map of china with decorative borders
+work/p0d.webp	https://unsplash.com/photos/person-holding-white-game-controller-zpDyTcg2iI8	person holding white game controller
+work/p0e.webp	https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00	graphs of performance analytics on a laptop screen
+work/p1a.webp	https://unsplash.com/photos/black-samsung-galaxy-smartphone-on-white-surface-cZr2sgaxy3Q	black samsung galaxy smartphone on white surface
+work/p1b.webp	https://unsplash.com/photos/mobile-app-interface-design-with-map-and-social-feed-nOY38cJyZaA	Mobile app interface design with map and social feed
+work/p1c.webp	https://unsplash.com/photos/mobile-app-interface-with-educational-content-llsp7CSktio	Mobile app interface with educational content
+work/p1d.webp	https://unsplash.com/photos/two-smartphones-displaying-different-app-interfaces-rIC8rWEe7cs	Two smartphones displaying different app interfaces
+work/p2a.webp	https://unsplash.com/photos/burg-eltz-castle-in-wierschem-21DP3hytVHw	Burg Eltz castle in Wierschem, Germany, surrounded by thick morning fog
+work/p2b.webp	https://unsplash.com/photos/closeup-photo-of-brown-map-N1gFsYf9AI0	closeup photo of brown map
+work/p2c.webp	https://unsplash.com/photos/brown-and-beige-ceiling-lamp-51Ms-0PbCHo	brown and beige ceiling lamp
+work/p2d.webp	https://unsplash.com/photos/a-video-game-controller-lit-up-in-the-dark-LfVBFnrM-bM	A video game controller lit up in the dark
+work/p3a.webp	https://unsplash.com/photos/a-modern-laptop-displaying-a-dark-themed-dashboard-6-0ajRI1cgs	A modern laptop displaying a dark-themed dashboard
+work/p3b.webp	https://unsplash.com/photos/laptop-and-phone-displaying-financial-data-_rAKDw1Fd54	Laptop and phone displaying financial data
+work/p3c.webp	https://unsplash.com/photos/a-smartphone-screen-displaying-app-icons-in-darkness-UX-yo33LgPA	A smartphone screen displaying app icons in darkness
+work/p4a.webp	https://unsplash.com/photos/yellow-pillar-candle-in-black-lantern-S7mAngnWV1A	yellow pillar candle in black lantern
+work/p4b.webp	https://unsplash.com/photos/person-holding-torch-in-building-interior-5DIFvVwe6wk	person holding torch in building interior
+work/p4c.webp	https://unsplash.com/photos/white-animal-feather-DSGP650z8rM	white animal feather
+work/p5a.webp	https://unsplash.com/photos/black-xbox-one-game-controller-2pNdTBn4C7U	black xbox one game controller
+work/p5b.webp	https://unsplash.com/photos/a-black-video-game-controller-gz4LqV-5ZnY	a black video game controller
+work/p5c.webp	https://unsplash.com/photos/a-smartphone-with-abstract-wallpaper-against-a-dark-gray-background-kjJ9zZy4s-c	A smartphone with abstract wallpaper against a dark gray background
+work/p6a.webp	https://unsplash.com/photos/man-in-black-and-white-crew-neck-shirt-holding-black-nikon-dslr-camera-b5oaW2R5iks	man in black and white crew neck shirt holding black nikon dslr camera
+work/p6b.webp	https://unsplash.com/photos/person-taking-a-selfie-with-a-camera-in-autumn-BYUrbt2ZxJI	Person taking a selfie with a camera in autumn
+work/p6c.webp	https://unsplash.com/photos/hand-holding-smartphone-displaying-a-health-application-s_YxJc7cdqc	Hand holding smartphone displaying a health application
+work/p7a.webp	https://unsplash.com/photos/a-black-bird-sitting-on-top-of-a-roof-d-vBDK5rqR0	a black bird sitting on top of a roof
+work/p7b.webp	https://unsplash.com/photos/a-black-crow-with-its-beak-open-sits-on-a-ledge-NvCxVi7pFxc	A black crow with its beak open sits on a ledge
+work/p7c.webp	https://unsplash.com/photos/photography-of-forest-1L71sPT5XKc	photography of forest
+work/p8a.webp	https://unsplash.com/photos/white-and-black-skull-figurine-on-black-surface-u6OnpbMuZAs	white and black skull figurine on black surface
+work/p8b.webp	https://unsplash.com/photos/giant-skull-in-dark-forest-with-light-beams-eT9sqpKdodc	Giant skull in dark forest with light beams
+work/p8c.webp	https://unsplash.com/photos/assorted-title-book-lot-on-shelf-TCsCykbwSJw	assorted-title book lot on shelf
+others/ds1.webp	https://unsplash.com/photos/silver-macbook-air-on-table-near-imac-jJT2r2n7lYA	silver MacBook Air on table near iMac
+others/ds2.webp	https://unsplash.com/photos/a-person-writing-on-a-piece-of-paper-next-to-a-keyboard-ml1IgjV8OvY	a person writing on a piece of paper next to a keyboard
+others/ds3.webp	https://unsplash.com/photos/yellow-click-pen-on-white-printer-paper-gcHFXsdcmJE	yellow click pen on white printer paper
+others/ds4.webp	https://unsplash.com/photos/employer-dashboard-showing-application-trends-and-key-metrics-phS1wAgXOQI	Employer dashboard showing application trends and key metrics
+others/g1.webp	https://unsplash.com/photos/the-national-parks-preserve-wild-life-wpa-poster-3J69CgmaSGU	The National Parks Preserve Wild Life. WPA poster
+others/g2.webp	https://unsplash.com/photos/vintage-travel-poster-of-scheveningen-beach--xleXxEcvX8	Vintage travel poster of three women in swim caps overlooking a beach in Scheveningen
+others/g3.webp	https://unsplash.com/photos/dont-kill-our-wild-life-wpa-poster-5vWC2RhyRCY	Don't Kill Our Wild Life. WPA poster
+others/g4.webp	https://unsplash.com/photos/green-balloon-on-white-surface-mKWg3NoAo_c	green balloon on white surface
+others/g5.webp	https://unsplash.com/photos/diagram-7wrK7bfT6fg	diagram
+others/g6.webp	https://unsplash.com/photos/a-painting-of-different-shapes-and-sizes-on-an-orange-background-AddxUGgVonQ	a painting of different shapes and sizes on an orange background
+others/g7.webp	https://unsplash.com/photos/keep-your-teeth-clean-wpa-poster-7QytS-1kuIA	 Keep Your Teeth Clean. WPA poster
+others/g8.webp	https://unsplash.com/photos/person-walks-past-large-mural-of-a-mans-face-ZmpLYJr0DJY	Person walks past large mural of a man's face
+others/ph1.webp	https://unsplash.com/photos/photography-of-white-concrete-stairs-R-wQExeiGrc	photography of white concrete stairs
+others/ph2.webp	https://unsplash.com/photos/worms-eye-view-photography-of-concrete-building-mQiZnKwGXW0	worm's-eye view photography of concrete building
+others/ph3.webp	https://unsplash.com/photos/woman-standing-in-front-of-white-building--vygi0Cvz_c	woman standing in front of white building
+others/ph4.webp	https://unsplash.com/photos/white-concrete-building-under-blue-sky-during-daytime-4G6DOKSwO8U	white concrete building under blue sky during daytime
+others/ph5.webp	https://unsplash.com/photos/minimalist-concrete-staircase-with-vase-0B7ijYKaKcE	A minimalist staircase with white concrete steps leading to a landing with a vase
+others/ph6.webp	https://unsplash.com/photos/white-architectural-structure-with-stairs-and-blue-sky-Y9uYq6aDHAU	White architectural structure with stairs and blue sky
+others/ph7.webp	https://unsplash.com/photos/green-trees-beside-white-concrete-building-WfCePInWrlQ	green trees beside white concrete building
+others/ph8.webp	https://unsplash.com/photos/white-painted-wall-phVaDpepOHE	white painted wall
+others/ph9.webp	https://unsplash.com/photos/woman-face-HkJM5g8IG3U	woman face
+others/ph10.webp	https://unsplash.com/photos/grayscale-photo-of-topless-woman-oifclaPX5oM	grayscale photo of topless woman
+others/ph11.webp	https://unsplash.com/photos/an-abstract-photo-of-a-curved-building-with-a-blue-sky-in-the-background-dH6IjhWHNQQ	an abstract photo of a curved building with a blue sky in the background
+
+# Video (Mixkit — free license, https://mixkit.co/license/#videoFree)
+assets/frames/*  (page 1)     https://mixkit.co/  video #32716  (woman holding a glowing moon)
+page2-page3.mp4  part 1       https://mixkit.co/  video #32722  (raven close-up)
+page2-page3.mp4  part 2       https://mixkit.co/  video #1007   (dancer in white fog)
+All clips colour-graded, trimmed and re-encoded with ffmpeg.
+
+# Music (Mixkit — free license, https://mixkit.co/license/#musicFree)
+assets/audio/ambient.mp3      "Vastness" by Andrew Ev  https://assets.mixkit.co/music/184/184.mp3
+
+# Fonts (SIL Open Font License, via Google Fonts, self-hosted)
+Cormorant Garamond, Noto Serif

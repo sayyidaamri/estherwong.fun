@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g" cx="32" cy="32" r="24" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF7E4" stop-opacity="0.95"/><stop offset=".5" stop-color="#F0D9A6" stop-opacity=".2"/><stop offset="1" stop-color="#D2AE66" stop-opacity="0"/></radialGradient>
+    <linearGradient id="r" x1="16" y1="14" x2="48" y2="50" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFF8E6"/><stop offset=".5" stop-color="#EBD199" stop-opacity=".8"/><stop offset="1" stop-color="#C99F55" stop-opacity=".55"/></linearGradient>
+    <filter id="f" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <circle cx="32" cy="32" r="24" fill="url(#g)"/>
+  <g filter="url(#f)">
+    <circle cx="32" cy="32" r="11" stroke="url(#r)" stroke-width="1.8"/>
+    <circle cx="32" cy="32" r="8" stroke="#F6E6BC" stroke-opacity=".35" stroke-width=".7"/>
+    <path d="M32 25 L33.1 30.9 L39 32 L33.1 33.1 L32 39 L30.9 33.1 L25 32 L30.9 30.9Z" fill="#FFF6DD"/>
+  </g>
+</svg>
