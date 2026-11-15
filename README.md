@@ -1,9 +1,12 @@
-# NOCTELLE — clone sinematik (referensi: estherwong.fun)
+# NOCTELLE — clone sinematik
+
+<p align="center"><img src="docs/preview/homepage.gif" alt="Pratinjau halaman beranda NOCTELLE" width="720"></p>
 
 Situs HTML/CSS/JS native, tanpa build dan tanpa hosting. **Buka `index.html` langsung di browser** (Chrome/Edge/Firefox).
 Semua aset (video, frame, gambar, musik, font) ada di folder lokal, jadi bisa jalan offline.
 
 ## Struktur
+
 ```
 index.html                kerangka halaman, modal Intro (teks ID + EN) dan modal proyek
 assets/
@@ -22,8 +25,9 @@ assets/
 ```
 
 ## Alur & state yang dibuat
+
 1. **Loader** persen + bar → tombol "Masuki Dunia / Enter World" (memulai musik).
-2. **Halaman 1** — scroll men-*scrub* frame 1→80, lalu otomatis main ke 150; kata "portfolio" berpendar muncul.
+2. **Halaman 1** — scroll men-_scrub_ frame 1→80, lalu otomatis main ke 150; kata "portfolio" berpendar muncul.
 3. **Halaman 2** — video transisi, lalu **board UX** (4 proyek inti + 5 karya pilihan, hover meredupkan node lain).
    - **Modal proyek**: tab bagian (proyek 1), panah ‹ ›, titik halaman, swipe/scroll horizontal, tombol panah keyboard,
      6 tab info (Ringkasan, Info Proyek, Fokus Inti, Bedah Desain, Kesimpulan, Kalimat Kunci), Esc untuk tutup.
@@ -34,13 +38,15 @@ assets/
 8. Kursor emas kustom (default/hover/klik) + jejak; mobile: swipe antar halaman, kursor dimatikan, board bisa di-scroll.
 
 ## Mengganti konten
+
 - Nama/brand: cari `NOCTELLE` dan `Mira Solenne` di `index.html` (logo SVG ada di header).
 - Proyek, tahun, deskripsi, gambar: `assets/js/data.js`.
 - Profil/riwayat kerja: blok `#introModal` di `index.html` (versi `data-intro-lang="id"` dan `"en"`).
 - Semua nama perusahaan, sekolah, klien, dan angka adalah **fiktif/placeholder**.
 
 ## Catatan kejujuran (beda dari referensi)
-- Ilustrasi & video referensi adalah karya orisinal mereka; di sini diganti stok Mixkit/Unsplash yang di-*grade* agar mood-nya mirip.
+
+- Ilustrasi & video referensi adalah karya orisinal mereka; di sini diganti stok Mixkit/Unsplash yang di-_grade_ agar mood-nya mirip.
   Karena itu komposisi gambar tidak identik (mis. halaman 4 memakai tangan + bola kristal, halaman 5 memakai foto wajah dengan iris yang diwarnai).
 - Font CJK referensi (Songti/SimSun) diganti **Noto Serif** untuk teks utama (Indonesia), Cormorant Garamond tetap sama.
 - GSAP tidak dipakai; animasi ditulis ulang dengan Web Animations API/CSS.
